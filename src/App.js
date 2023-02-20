@@ -1,6 +1,7 @@
 import "./App.css";
 import BannerComponent from "./component/BannerComponent";
 import TimerComponent from "./component/TimerComponent";
+import WeddingConvert from "./component/WeddingConvert";
 import "./font/sweet.ttf";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className='App'>
       <BannerComponent />
       <TimerComponent />
+      <WeddingConvert />
     </div>
   );
 }
