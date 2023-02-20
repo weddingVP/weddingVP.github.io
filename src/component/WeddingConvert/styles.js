@@ -54,12 +54,17 @@ export const Text = styled.p`
   margin: 48px auto 48px;
   font-size: 18px;
   border-radius: 5px;
-  max-width: 1025px;
+  max-width: 980px;
 `;
 
 export const Pictures = styled.img`
   width: 100%;
-  height: 420px;
-  border-radius: 10px;
+  height: 100vh;
   object-fit: cover;
+  border-radius: 10px;
+  max-width: 980px;
+
+  @media (max-width: 690px) {
+    height: 420px;
+  }
 `;

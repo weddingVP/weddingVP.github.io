@@ -12,8 +12,8 @@ export default function BannerComponent() {
       <NavigationBar>
         <Name>О НАС</Name>
         <Name>ПРИГЛАШЕНИЕ</Name>
+        <Name>МЕСТО ПРОВЕДЕНИЯ</Name>
         <Name>ПРОГРАММА ДНЯ</Name>
-        <Name>ПОЖЕЛНИЯ</Name>
         <Name>ФОРМА РЕГИСТРАЦИИ</Name>
       </NavigationBar>
       <NamesContainer>
