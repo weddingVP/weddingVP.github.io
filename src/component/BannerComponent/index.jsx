@@ -7,13 +7,27 @@ import {
 } from "./styles";
 
 export default function BannerComponent() {
+  const handleCconvertClick = () => {
+    var elmntToView = document.getElementById("convert");
+    elmntToView.scrollIntoView();
+  };
+
+  const handlePlaceClick = () => {
+    var elmntToView = document.getElementById("place");
+    elmntToView.scrollIntoView();
+  };
+
+  const handleProgClick = () => {
+    var elmntToView = document.getElementById("prog");
+    elmntToView.scrollIntoView();
+  };
   return (
     <Container>
       <NavigationBar>
         <Name>О НАС</Name>
-        <Name>ПРИГЛАШЕНИЕ</Name>
-        <Name>МЕСТО ПРОВЕДЕНИЯ</Name>
-        <Name>ПРОГРАММА ДНЯ</Name>
+        <Name onClick={handleCconvertClick}>ПРИГЛАШЕНИЕ</Name>
+        <Name onClick={handlePlaceClick}>МЕСТО ПРОВЕДЕНИЯ</Name>
+        <Name onClick={handleProgClick}>ПРОГРАММА ДНЯ</Name>
         <Name>ФОРМА РЕГИСТРАЦИИ</Name>
       </NavigationBar>
       <NamesContainer>

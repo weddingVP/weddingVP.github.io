@@ -11,7 +11,7 @@ import {
 import image from "./assets/image.png";
 export default function Place() {
   return (
-    <Container>
+    <Container id='place'>
       <Title>Место проведения</Title>
       <PlaceBackground>
         <Im src={image} />
