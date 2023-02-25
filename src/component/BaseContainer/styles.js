@@ -28,6 +28,7 @@ export const Container = styled.div`
     bottom: 0px;
     left: 0px;
     opacity: 0.3;
+    z-index: -1;
   }
 `;
 

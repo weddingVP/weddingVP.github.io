@@ -21,6 +21,12 @@ export default function BannerComponent() {
     var elmntToView = document.getElementById("prog");
     elmntToView.scrollIntoView();
   };
+
+  const handleFormClick = () => {
+    var elmntToView = document.getElementById("form");
+    elmntToView.scrollIntoView();
+  };
+
   return (
     <Container>
       <NavigationBar>
@@ -28,7 +34,7 @@ export default function BannerComponent() {
         <Name onClick={handleCconvertClick}>ПРИГЛАШЕНИЕ</Name>
         <Name onClick={handlePlaceClick}>МЕСТО ПРОВЕДЕНИЯ</Name>
         <Name onClick={handleProgClick}>ПРОГРАММА ДНЯ</Name>
-        <Name>ФОРМА РЕГИСТРАЦИИ</Name>
+        <Name onClick={handleFormClick}>ФОРМА РЕГИСТРАЦИИ</Name>
       </NavigationBar>
       <NamesContainer>
         <PersonName>Виктор</PersonName>

@@ -14,7 +14,7 @@ export const Container = styled.div`
   width: fit-content;
 
   @media (max-width: 370px) {
-    margin: -30px 10px 0;
+    margin: -30px auto 0;
   }
 `;
 
@@ -33,7 +33,8 @@ export const Numbers = styled.div`
   width: 80px;
 
   @media (max-width: 434px) {
-    font-size: 12px;
+    font-size: 11px;
     width: 60px;
+    padding: 2px;
   }
 `;

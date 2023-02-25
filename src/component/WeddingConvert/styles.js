@@ -43,7 +43,15 @@ export const Title = styled.h2`
   padding: 10px 20px;
   margin: 0 auto;
   border-radius: 5px;
-  width: fit-content;
+  width: calc(100% - 40px);
+
+  @media (max-width: 425px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 22px;
+  }
 `;
 
 export const Text = styled.p`

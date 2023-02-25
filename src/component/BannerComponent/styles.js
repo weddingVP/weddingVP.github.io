@@ -3,15 +3,37 @@ import background from "./assets/main-photo.jpeg";
 
 export const Container = styled.div`
   align-items: center;
-  background-image: url(${background});
-  background-position: top center;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 32px;
-  height: 100dvh;
+  height: 100vh;
   width: 100%;
   justify-content: center;
+
+  :before {
+    content: "";
+    background-image: url(${background});
+    background-position: top center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    animation-name: example1;
+    animation-duration: 4s;
+
+    @keyframes example1 {
+      0% {
+        transform: scale(2);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
 `;
 
 export const NavigationBar = styled.div`
@@ -36,10 +58,22 @@ export const NamesContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
+  animation-name: example;
+  animation-duration: 4s;
 
   svg {
     width: 40px;
     height: 40px;
+  }
+
+  @keyframes example {
+    0% {
+      transform: scale(3);
+    }
+
+    100% {
+      transform: scale(1);
+    }
   }
 `;
 

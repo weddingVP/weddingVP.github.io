@@ -7,6 +7,7 @@ import BaseContainer from "./component/BaseContainer";
 import Colors from "./component/Colors";
 import Prog from "./component/Prog";
 import { Text, Btn } from "./component/Colors/styles";
+import Form from "./component/Form";
 import "./font/sweet.ttf";
 
 function App() {
@@ -46,7 +47,12 @@ function App() {
           #weddingVP
         </Btn>
       </BaseContainer>
-      <BaseContainer title='КОНТАКТЫ'>
+      <div id='form'>
+        <BaseContainer title='ПОЖАЛУЙСТА, ПОДТВЕРДИТЕ СВОЕ ПРИСУТСТВИЕ И ОТВЕТЬТЕ НА ВОПРОСЫ'>
+          <Form />
+        </BaseContainer>
+      </div>
+      <BaseContainer title='КОНТАКТЫ' bottom>
         <Text>
           По всем вопросам вам поможеет наш свадебный организоватор Ксения
         </Text>

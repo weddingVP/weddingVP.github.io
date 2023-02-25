@@ -24,9 +24,11 @@ export const Time = styled.p`
   color: #5a86ad;
   opacity: 0.8;
   margin: 0;
+  z-index: 500;
 `;
 
 export const Text = styled.p`
   font-size: 24px;
   margin: 0;
+  z-index: 0;
 `;
