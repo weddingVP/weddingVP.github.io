@@ -8,8 +8,8 @@ export default function Colors() {
         нарядах вы поддержите цветовую гамму нашей свадьбы!
       </Text>
       <Rounds>
-        <Round color={"#000080"} />
-        <Round color={"#5A86AD"} />
+        <Round color={"#0E172F"} />
+        <Round color={"#899BB1"} />
         <Round color={"#808080"} />
         <Round color={"#C0C0C0"} />
       </Rounds>

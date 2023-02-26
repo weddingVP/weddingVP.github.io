@@ -5,6 +5,7 @@ import emailjs from "emailjs-com";
 import confetti from "canvas-confetti";
 export default function Form() {
   const [name, setName] = useState("");
+  const [additionalName, setAdditionalName] = useState("");
   const [onIt, setOnIt] = useState(true);
   const [shamp, setShamp] = useState(false);
   const [vine, setVine] = useState(false);
@@ -15,6 +16,10 @@ export default function Form() {
 
   const handleChange = (event) => {
     setName(event.target.value);
+  };
+
+  const handleAdditionalGiestChange = (event) => {
+    setAdditionalName(event.target.value);
   };
 
   const onItCheckbox = ({ target: { checked } }) => {
@@ -29,6 +34,7 @@ export default function Form() {
     e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
     var templateParams = {
       name: `Имя гостя: ${name}`,
+      extraUser: `Так же с гостем будут: ${additionalName}`,
       onit: `Присутствие: ${onIt ? "Да" : "Нет"}`,
       alco: `Алкоголь: ${shamp ? "шампанское," : ""} ${vine ? "вино," : ""} ${
         vodka ? "водкa" : ""
@@ -79,6 +85,13 @@ export default function Form() {
           type='text'
           value={name}
           onChange={handleChange}
+        />
+        <label>Кто еще будет с вами?</label>
+        <NameCont
+          placeholder='Имя и фамилия'
+          type='text'
+          value={additionalName}
+          onChange={handleAdditionalGiestChange}
         />
         <label>Ваши предпочтениия по напиткам</label>
         <div>
